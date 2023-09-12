@@ -29,9 +29,9 @@ class CustomDivePlan : public QObject
 {
 	Q_OBJECT
 public:
-	void loadLogFiles (const std::string & fname) {}
-	struct diveplan * createDivePlanFromComputer (const struct divecomputer & dc) { return nullptr; }
-	void planDeco (diveplan * divePlan, struct dive * dive) {}
+	void loadLogFiles (const std::string & fname);
+	struct diveplan * createDivePlanFromComputer (const struct divecomputer & dc);
+	void planDeco (diveplan * divePlan, struct dive * dive);
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
